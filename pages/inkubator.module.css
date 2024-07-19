@@ -1,0 +1,33 @@
+.mainDiv {
+  padding-top: 2rem; /* py-8 equivalent */
+  padding-bottom: 16rem; /* md:py-64 equivalent */
+  max-width: 94%;
+  margin: 0 auto;
+}
+
+.title {
+  background-image: linear-gradient(to bottom right, #000, #05ff9a);
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  font-size: 2.25rem; /* text-4xl equivalent */
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  margin-bottom: 4rem; /* Providing space below */
+}
+
+.textSection {
+  color: #6b7280; /* text-gray-500 equivalent */
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 1.25rem; /* md:text-xl equivalent */
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}

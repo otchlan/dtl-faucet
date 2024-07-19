@@ -1,0 +1,54 @@
+/*Popup.module.css*/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Dim background */
+  z-index: 100;
+}
+
+.popup {
+  position: relative; /* For absolute positioning of children */
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1050; /* Ensure it's on top of other content */
+  width: 80%; /* Adjust width as needed */
+  padding: 20px; /* Padding around content */
+  display: flex; /* To lay out left and right content */
+  color: #f4f4f4;
+  height: 70vh;
+}
+
+.closeContainer {
+  position: absolute;
+  top: -10px; /* Adjust as needed */
+  right: -10px; /* Adjust as needed */
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #f4f4f4; /* Close button color */
+}
+
+.content {
+  display: flex;
+  width: 100%;
+}
+
+.leftContent {
+  width: 50%;
+}
+
+.rightContent {
+  width: 50%;
+  text-align: right;
+}

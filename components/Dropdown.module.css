@@ -1,0 +1,57 @@
+.container {
+  width: 90%;
+  margin-bottom: 0px;
+  margin-top: 16px;
+}
+
+.dropbtn {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  margin-right: 8px;
+}
+
+.dropbtn img {
+  width: 14px;
+  height: 21px;
+  border-radius: 70%;
+  transition: background 0.3s ease-in-out;
+}
+
+.dropbtn:hover img {
+  background: radial-gradient(circle at center, #08fc9c 0%, transparent 80%);
+  transform: scale(1.20);
+}
+
+
+.dropdown {
+  left: 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+.carousel {
+  width: 96%;
+  height: auto;
+  color:#E0E0E0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #08fc9c;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+
+.contentDivWhite {
+  height: auto;
+  color: #E0E0E0;
+  padding-right: 4px;
+  padding-left: 4px;
+  width: 96%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #08fc9c;
+}
+
+
+
+.show {display: flex;}

@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  server:
+    build:
+      context: ./backend
+      dockerfile: server.Dockerfile
+    ports:
+      - "3005:3005"
+    depends_on:
+      - db_server
+    environment:
+      - DB_SERVER_URL=http://db_server:3006
+    volumes:
+      - ./backend/data:/usr/src/app/data
+
+  db_server:
+    build:
+      context: ./backend
+      dockerfile: db_server.Dockerfile
+    ports:
+      - "3006:3006"
+    volumes:
+      - ./backend/data:/usr/src/app/data
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src/app
+    depends_on:
+      - server
+    environment:
+      - NODE_ENV=development

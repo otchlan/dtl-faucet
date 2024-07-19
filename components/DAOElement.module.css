@@ -1,0 +1,60 @@
+.image {
+    height: 150px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.container {
+    display: flex;
+    align-items:  center; 
+    gap: 10px;
+    flex: 1;
+    flex-direction: row;
+    border: 2px solid #05ff9a;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 340px;
+    min-width: 200px;
+    max-width: 90%;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.glowText_x {
+    width: 60%;
+    color: #fff; /* Setting the text color */
+    font-size: 25px;  /* Setting font size */
+    -webkit-text-stroke: 1px black;  /* Add a black outline/stroke to the text */
+    text-stroke: 1px black; /* Standard property but might not be supported in all browsers */
+    text-align: center; /* To ensure the text itself is centered, in case it wraps to multiple lines */
+    margin: 0 auto; /* Centering block elements */
+    margin-bottom: 15px;
+}
+
+.glowText_x:hover {
+    color: #08fc9c;
+}
+
+
+  @media (max-width: 768px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+
+    .glowText_x {
+        width: 90%;
+    }
+
+  }
+  

@@ -1,0 +1,14 @@
+.mainContainer {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.loremText {
+  margin-top: 20px;
+  max-width: 90vw;
+  text-align: center;
+}

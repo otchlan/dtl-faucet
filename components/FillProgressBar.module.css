@@ -1,0 +1,15 @@
+.container {
+  width: 96%;
+  height: 300px;
+  display: flex;
+}
+
+.leftDiv {
+  width: 30%;
+  margin-right: 2%;
+}
+
+.rightDiv {
+  width: 68%;
+  height: 100%;
+}

@@ -1,0 +1,272 @@
+/*Project.module.css*/
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100vw;
+  height: auto;  /* changed from 100vh to auto */
+   min-height: 100vh;
+}
+
+.topContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch; /* Update this line */
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #05ff9a;
+  color: #05ff9a;
+  width: 96%;
+  min-width: 240px;
+
+}
+
+
+@media (max-width: 900px) {
+
+  .topContainer > div:first-child {
+    flex-basis: 100%;
+  }
+
+}
+
+
+.subContainer {
+  flex: 1;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #05ff9a;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 340px;
+  min-width: 200px;
+  align-self: stretch; 
+}
+
+
+.image {
+  max-width: 100%;
+  height: auto;
+  max-height: 340px;
+  border-radius: 5px;
+}
+
+@media (max-width: 900px) {
+
+  .image {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+}
+
+.dataColor {
+  color: #05ff9a;
+  margin: 5px 0; 
+  margin-left: 15px;/* Optionally, you can add some margin for better spacing */
+}
+
+.dataContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 5px;
+  position: relative;
+  gap: 10px;
+}
+
+.answerColor {
+  color: white;
+  text-align: right;
+  margin: 5px 0; /* Optionally, you can add some margin for better spacing */
+}
+
+@media (max-width: 868px) {
+
+  .dataContainer {
+    flex-direction: column;
+  }
+
+  .answerColor {
+    text-align: left;
+  }
+
+}
+
+
+
+.bottomContainer {
+  display: flex;           /* Use flexbox */
+  justify-content: space-between;  /* Distribute the child divs evenly */
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #05ff9a;
+  color: #05ff9a;
+  width: 96%;
+}
+
+@media (max-width: 768px) {
+
+  .bottomContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+.sideBySideOneDiv {
+  width: 49%;  /* Set width to 49% as required */
+  margin-right: 1%;  /* Set margin to 1% on the right */
+  margin-bottom: auto;
+
+}
+
+.sideBySideTwoDiv {
+  width: 49%;  /* Set width to 49% as required */
+  margin-left: 1%;  /* Set margin to 1% on the left */
+  padding: 10px;  /* Add some padding for content inside */
+  border: 1px solid #05ff9a;  /* Add a border line between the two divs */
+  border-radius: 5px;
+  margin-bottom: auto;
+
+}
+
+@media (max-width: 768px) {
+
+  .bottomContainer {
+    gap: 15px;
+  }
+
+  .sideBySideOneDiv {
+    width: 100%;
+    margin: 0;
+  }
+  .sideBySideTwoDiv {
+    width: 100%;
+    margin: 0;
+  }
+
+}
+
+.dropdown {
+  position: absolute;
+  top: 0; /* Align it to the top of the .dataContainer */
+  left: 76%; /* Position it to the right of the .dataContainer */
+  width: 200px; /* or whatever width you desire */
+  background-color: #333; /* Adjust as needed */
+  border-radius: 5px;
+  z-index: 1; /* Make it overlap other content */
+}
+
+
+.dropdown p {
+  color: white;
+  padding: 10px;
+  margin: 0;
+  cursor: pointer; /* Make options look clickable */
+}
+
+.dropdown p:hover {
+  background-color: #555; /* Highlight option on hover */
+}
+
+.taskItem {
+  border: 1px solid #05ff9a;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.taskItem:hover {
+  background-color: #046E43;
+}
+
+.taskItemHighlighted {
+  border: 1px solid #05ff9a;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  background-color: #05ff9a;
+  color: #000; /* Change text color if necessary */
+}
+
+.highlighted {
+    background-color: #e5e5e5;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    border: 2px solid #05ff9a;
+}
+
+.highlighted:hover {
+  background-color: #b2b2b2;
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  font-weight: bold;
+  text-align: center;
+}
+
+.subtitle {
+  color: white;
+  font-weight: bold;
+}
+
+.content {
+  color: white;
+}
+
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding: 0;
+  margin-bottom: auto;
+  gap: 5px;
+
+}
+
+.settlement {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.settleBox {
+  color: black;
+  background-color: #05ff9a;
+  border: 3px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+
+}
+
+.settleBox:hover {
+  background-color: #09B56F;
+}
+
+.settleBox:active {
+  background-color: #098F58;
+}
+
+.boxTitle {
+  font-weight: bold;
+}
+

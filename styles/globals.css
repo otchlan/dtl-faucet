@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: #D1D5DB;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 6px; /* Adjust scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: #2D3748; /* Scrollbar track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #05ff9a; /* Scrollbar thumb color */
+  border: 2px solid #2D3748; /* Creates a little border around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #667EEA; /* Scrollbar thumb color on hover */
+}

@@ -1,0 +1,11 @@
+/* components/WalletStatus.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically in the flex container */
+  align-items: center; /* Center horizontally in the flex container */
+  padding: 20px;
+  height: 100%; /* Ensure the container takes full height of its parent */
+  width: 100%; /* Ensure the container takes full width of its parent */
+}
+

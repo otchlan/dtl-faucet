@@ -1,0 +1,142 @@
+.parentContainer {
+  display: flex;
+  justify-content: space-between; /* Ensures child elements are spaced out evenly */
+  align-items: center; /* Vertically centers children in the container */
+  padding: 20px;
+  border: 1px solid #05ff9a; /* Distinctive green border */
+  border-radius: 5px;
+  width: 96%;
+  min-width: 240px;
+  height: 44vh; /* Fixed height of 40% of the viewport height */
+  color: #05ff9a; /* Text color set to a soft green */
+}
+
+.leftColumn {
+  padding: 20px;
+  flex: 1; /* Takes up 1 part of the flex container */
+  border: 1px solid #05ff9a;
+  border-radius: 5px;
+  height: 40vh; /* Slightly shorter than the parent to provide a contained look */
+}
+
+.rightColumn {
+  display: flex;
+  flex-direction: column; /* Organizes children vertically */
+  padding: 8px;
+  flex: 2; /* Takes up 2 parts of the flex container, making it larger than the leftColumn */
+  border: 1px solid #05ff9a;
+  border-radius: 5px;
+  height: 40vh; /* Consistent with leftColumn for alignment */
+}
+
+.upperDiv {
+  border-radius: 5px 5px 0 0; /* Rounded corners on top only */
+}
+
+.batchDiv {
+  border-radius: 4px;
+  text-align: right;
+}
+
+.progressDiv {
+  padding: 10px;
+  border: 1px solid #ccc; /* Subtle border for definition */
+  border-radius: 4px; /* Matches batchDiv */
+}
+
+/* Adjustments to your CSS file */
+.progressBar {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 4px;
+  overflow: hidden; /* Ensures the inner div doesn't exceed the parent's boundary */
+  position: relative; /* Position context for text centering */
+}
+
+.progress {
+  height: 20px; /* Set the height of the progress bar */
+  background-color: #4CAF50; /* A nice green color for completion */
+  width: 0; /* Initial width of 0 */
+  transition: width 0.3s ease-in-out; /* Smooth transition for width changes */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers text horizontally and vertically */
+  color: white; /* Text color */
+  text-shadow: 1px 1px 2px black; /* Ensures text is readable over varying backgrounds */
+}
+
+.progressInfo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5px; /* Adds a little space between the progress bar and text */
+}
+
+.amount {
+  color: #05ff9a; /* Using the theme's accent color for amount */
+}
+
+.percentage {
+  color: #05ff9a; /* Using the theme's accent color for percentage */
+}
+
+.gatewayDiv {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Continues the theme of rounded corners */
+}
+
+.lowerDiv {
+  display: flex; /* Set the display to flex to align children side by side */
+  justify-content: space-around; /* Space the children nicely */
+  align-items: center; /* Align children vertically */
+  padding: 10px;
+}
+
+.image {
+  max-width: 100%; /* Ensures the image does not exceed the width of its container */
+  border-radius: 5px; /* Consistent rounding with other components */
+}
+
+.batchButton {
+  height: 40px;
+  border: 1px solid #ccc; /* Standard border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 4px;
+}
+
+.batchButton:last-child {
+  margin-right: 0; /* No margin on the right for the last button */
+}
+
+.batchButton.active {
+  background-color: #fff; /* White background for active tab */
+  border-color: #05ff9a; /* Highlight active tab with a green border */
+  color: #000;
+}
+
+.dataContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+.subContainer {
+  flex: 1; /* Each subContainer takes equal space */
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+
+.dataColor {
+  /* No changes needed here, assuming previous style definitions suffice */
+}
+
+.answerColor {
+  /* No changes needed here, assuming previous style definitions suffice */
+}

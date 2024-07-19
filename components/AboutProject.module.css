@@ -1,0 +1,24 @@
+/* AboutProject.module.css */
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100vw;
+  height: auto;  /* changed from 100vh to auto */
+   min-height: 100vh;
+}
+
+.container {
+    width: 96%;
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    background-color: #f4f4f4; /* Light grey background */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center text */
+    color: #333; /* Dark grey text color */
+    height: 50vh;
+}
+

@@ -1,0 +1,41 @@
+
+.mainContainer {
+	border: 1px solid white;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.title {
+	display: flex;
+	flex-direction: row;
+	color: white;
+	width: 100%;
+	
+}
+
+.triangle {
+	height: 20px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.titleContent {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.titlev2 {
+	
+	font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.titleContent:hover {
+	cursor: pointer;
+}
+
+.discussContainer {
+	height: 300px;
+}

@@ -1,0 +1,111 @@
+.card {
+  border-radius: 8px;
+  box-shadow: 0 0 10px #08fc9c;
+  height: 280px;
+  margin: 0 0.5%;
+  margin-top: 24px;
+  overflow: hidden;
+  position: relative;
+  transition: box-shadow 0.3s ease;
+  width: calc(100% - 1%);
+  color: #E0E0E0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .card {
+    width: calc(50% - 1%);
+  }
+}
+
+@media (min-width: 900px) {
+  .card {
+    width: calc(33% - 1%);
+  }
+}
+
+@media (min-width: 1200px) {
+  .card {
+    width: calc(25% - 1%);
+  }
+}
+
+.card:hover .cardImage {
+  bottom: 100%;
+}
+
+.card:hover .cardDescription {
+  bottom: 0;
+}
+
+.cardImage, .cardDescription {
+  position: absolute;
+  transition: bottom 0.3s ease;
+  width: 100%;
+}
+
+.cardName {
+  height: 20%;
+  margin-top: 8px;
+  text-align: center;
+  width: 100%;
+  order: 1;
+  z-index: 1;
+}
+
+.cardImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  height: 80%;
+  padding: 6px;
+  order: 2;
+}
+
+.cardImage img {
+  margin: auto;
+}
+
+.cardDescription {
+  bottom: -90%;
+  height: 80%;
+  padding: 1%;
+  order: 3;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.cardButton {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(128, 128, 128, 0.8);
+  z-index: 10;
+  display: flex;
+  align-items: center; /* vertically center the content */
+  justify-content: center; /* horizontally center the content */
+}
+
+.overlayContent {
+  display: none;
+  color: white; /* you can change this as needed */
+  font-size: 1rem; /* adjust as needed */
+  font-weight: bold; /* adjust as needed */
+  text-align: center;
+}
+
+.card:hover .overlayContent {
+  display: block;
+  color: #05ff9a;
+}

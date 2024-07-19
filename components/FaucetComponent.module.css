@@ -1,0 +1,55 @@
+/* FaucetComponent.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Ensures text is centered in flex children */
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Takes full width to center content within */
+}
+
+.container img {
+  max-width: 60%;
+  margin-bottom: 20px; /* Ensures space between the image and the button */
+}
+
+.container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* Adds margin above the button for spacing */
+}
+
+.container button:hover {
+  background-color: #0056b3;
+}
+
+.container p {
+  margin-top: 20px;
+  color: #F4F4F4;
+  font-size: calc(3px + 1vw); /* Responsive font size based on viewport width */
+  text-align: center;
+  width: 100%;
+  padding: 0 2%; /* Adds padding on the sides for better readability */
+}
+
+.container p:first-of-type {
+  font-weight: bold; /* Bold font for the first paragraph */
+}
+
+/* Adjusts the font size for smaller devices */
+@media (max-width: 600px) {
+  .container p {
+    font-size: calc(1px + 2vw); /* Adjusts font size on smaller screens for better readability */
+  }
+}
